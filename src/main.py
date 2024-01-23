@@ -1,7 +1,7 @@
 import asyncio
 import os, os.path
 import tornado.web
-import Index, Profile, TemplateTest       #new
+import Index, Profile
 import os
 
 HTMLDIR = os.path.abspath(

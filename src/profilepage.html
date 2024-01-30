@@ -2,15 +2,25 @@
 <html>
 <head>
     <title>Profile Info</title>
+    <style>
+        table, th, td {
+          border: 1px solid; padding: 5px;
+        }
+        </style>
 </head>
 <body>
 
 Here is your profile information.
 <hr><br>
 
-<div>Name: {{name}}</div>
-<div>Date of Birth: {{dateOfBirth}}</div>
-<div>Email: {{email}}</div>
+
+<table>
+    <tr>
+    <th>Picture<th>Full Name<th>Date of Birth<th>Email
+    </tr>
+    <tr><td><img src="{{picture}}"><td>{{name}}</td><td>{{dateOfBirth}}<td>{{email}}</tr>
+    
+    </table>
 
 </body>
 </html>

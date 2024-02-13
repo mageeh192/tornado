@@ -3,15 +3,6 @@
 console.log(document.location.pathname);
 
 function submit(){
-
-        let file = document.getElementById("ppic").files[0];
-        if(!file){
-            console.log("No file!");
-            return;
-        }
-        let R = new FileReader();
-        R.addEventListener("load", () => {
-
             let pname = document.getElementById("pname").value;
             let dob = document.getElementById("birthdate").value;
             console.log("Info:", pname, dob);
@@ -33,8 +24,4 @@ function submit(){
             }).catch( (err) => {
                 console.log("Uh oh",err);
             })
-        };
-        
-        R.readAsBinaryString(file);
-
 }

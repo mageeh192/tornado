@@ -16,8 +16,7 @@ class updateHandler(tornado.web.RequestHandler):
             J=json.loads(self.request.body)
             preferredName = J["preferredName"]
             dob = J["birthdate"]
-            ppic = base64.b64decode(J["pic"])
-            print("WE GOT:",preferredName,dob,ppic[:20])
+            print("WE GOT:",preferredName,dob)
 
             L = self.request.path.split("/")
             uname = L[2]
